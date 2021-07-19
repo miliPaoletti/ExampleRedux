@@ -1,13 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import './index.css'
-import App from './App'
+// import React from "react";
+// import { render } from "react-dom";
+// import { Provider } from "react-redux";
+// import store from "./redux/store";
+// import App from "./App";
 
-import './api/server'
+// render(
+//   // hace que store este disponible en toda nuestra app. 
+//   <Provider store={store}>
+//     <App />
+//   </Provider>,
+//   document.getElementById("root")
+// );
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-)
+import index from "./redux/index";

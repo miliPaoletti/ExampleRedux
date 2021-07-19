@@ -1,22 +1,19 @@
-import React from 'react'
+import React from "react";
+// interactuar con Redux. 
+import List from "./components/List";
+import Form from "./components/Form";
 
-function App() {
-  return (
-    <div className="App">
-      <nav>
-        <section>
-          <h1>Redux Fundamentals Example</h1>
+const App = () => (
+  <>
+  <div>
+    <h2>Articles</h2>
+    <List />
+  </div>
+  <div>
+    <h2>Add a new article</h2>
+    <Form />
+  </div>
+</>
+);
 
-          <div className="navContent">
-            <div className="navLinks"></div>
-          </div>
-        </section>
-      </nav>
-      <section>
-        <h2>Welcome to the Redux Fundamentals example app!</h2>
-      </section>
-    </div>
-  )
-}
-
-export default App
+export default App;
