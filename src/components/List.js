@@ -14,13 +14,13 @@ import { connect } from "react-redux";
   
 // };
 
-
+// dibuja una lista con los datos que tenga el arreglo de articles. 
+// los datos los agarra de redux, a traves del getListArticles
 class ConnectedList extends React.Component{
-    
     render(){
         let articlesList = this.props.reduxData.articles.articles.map((item) => {
             return(
-            <li key={item.id}>{item}</li>)
+            <li>{item}</li>)
         })
         return (<ul>{articlesList}</ul>)
     }

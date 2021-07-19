@@ -19,10 +19,9 @@ const initialState = {
            return Object.assign({}, state, {
             articles: state.articles.concat(action.payload)
           });
-
     }
      
-    //   devuelve el estado inicial. 
+    // devuelve el estado inicial. 
     return state;
   };
   
