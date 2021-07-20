@@ -11,7 +11,7 @@ class ConnectedList extends React.Component{
     render(){
         let articlesList = this.props.reduxData.articles.articles.map((item) => {
             return(
-            <li>{item}</li>)
+            <li key={item.id}>{item.title}</li>)
         })
         return (<ul>{articlesList}</ul>)
     }
