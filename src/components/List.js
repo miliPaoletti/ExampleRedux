@@ -3,16 +3,7 @@ import React from "react";
 import {getListArticles} from '../redux/selectors/index' 
 
 import { connect } from "react-redux";
-// mapStateToProps hace exactamente lo que sugiere su nombre: 
-// conecta una parte del estado de Redux a los accesorios de un componente de React. 
-// Al hacerlo, un componente React conectado tendrá acceso a la parte exacta del store 
-// que necesita.
 
-
-// const mapStateToProps = state => {
-//   return { articles: [state.articles] };
-  
-// };
 
 // dibuja una lista con los datos que tenga el arreglo de articles. 
 // los datos los agarra de redux, a traves del getListArticles

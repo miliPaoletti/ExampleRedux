@@ -26,7 +26,7 @@ class ConnectedForm extends Component {
   // El método handleSubmit envía una acción
   handleSubmit(event) {
     event.preventDefault();
-    const { title } = this.state;    
+    const { title } = this.state;
     this.props.addArticle([ title ]);
     // deja el input vacio
     this.setState({ title: "" });
